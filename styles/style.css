@@ -1,0 +1,120 @@
+/*-------------------------------- 
+fonts
+---------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* -------------------------------
+common-styles
+---------------------------------- */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-weight: 700;
+    font-size: 64px;
+    margin: 0px 50px 0px 0px;
+
+}
+h2{
+    font-size: 48px;
+    font-weight: 700;
+}
+h3{
+    font-size: 28px;
+}
+p{
+    font-size: 16px;
+}
+.flex-container{
+    display: flex;
+    align-items: center;
+}
+.button{
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    padding: 10px 24px;
+}
+
+/*-------------------------------
+top-banner-styles 
+---------------------------------*/
+.top-banner{
+    background-color: #2D25A0;
+    color: #FFFFFF;
+    padding-bottom: 106px;
+    padding-left: 156px;
+    padding-right: 140px;
+    padding-top: 45px;
+
+}
+
+.half-width{
+    width: 50%;
+}
+.half-width img{
+    width: 100%;
+}
+
+/* --------------------------------
+players-styles
+----------------------------------- */
+
+.players-list{
+    display: flex;
+    margin-left: 180px;
+    margin-right: 210px;
+    margin-top: 70px;
+    margin-bottom: 165px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+
+}
+.players img{
+    width: 100%;
+}
+.player{
+    padding: 15px;
+    box-shadow: 5px 5px 20px gray;
+}
+/*-------------------------------------
+ highlights-styles
+ -------------------------------------- */
+.highlights{
+    display: flex;
+    align-items: center;
+    margin-left: 182px;
+    margin-right: 156px;
+    margin-bottom: 165px;  
+}
+article{
+    padding-right: 69px;
+}
+
+
+/*------------------------------------- 
+Footer-Styles 
+---------------------------------------*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 475px;
+    margin-left: 475px;
+    margin-bottom: 47px;
+}
+footer img{
+    width: 100%;
+}
+#media-icon{
+    display: flex;
+
+}
+.icon{
+margin: 0px 7px;
+    color: gray;
+}
