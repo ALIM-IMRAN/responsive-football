@@ -156,8 +156,7 @@ article h2{
 }
 .more-title h1{
     font-size: 58px;
-    padding-top: 20px;
-    padding-left: 200px;
+    padding-left: 25px;
 }
 
 
@@ -192,7 +191,11 @@ footer{
 /*--------------------------------- 
 Media Queries 
 -----------------------------------*/
-@media only screen and (max-width:688px){
+/*--------------------------------- 
+Mobile devices
+-----------------------------------*/
+@media only screen and (max-width:688px)
+{
     .top-banner,.highlights,.match-status,.current-match,.more-football{
         flex-direction: column;
         width: 100%;
@@ -211,7 +214,7 @@ Media Queries
     .more-title h1{
         font-size: 38px;
         padding-top: 10px;
-        padding-left: 20px;
+        padding-left: 25px;
     }
     footer{
         width: 400px;
@@ -219,6 +222,45 @@ Media Queries
     }
     .players{
         grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/*----------------------------------- 
+tablet devices
+------------------------------------- */
+@media only screen and (min-width:689px) and (max-width:992px)
+{
+
+    .top-banner,.highlights,.match-status,.current-match,.more-football{
+        flex-direction: column;
+        width: 100%;
+    }
+    .h-image,.b-img{
+        padding-top: 50px;
+    }
+    .players-list,.half-width,.footer-logo,.footer-info{
+        width: 100%;
+    }
+    .match-status{
+        margin-left: 150px;
+        margin-bottom: 70px;
+    }
+
+    .more-title h1{
+        font-size: 40px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    .more-football{
+        padding-left: 250px;
+    }
+
+    footer{
+        width: 400px;
+        margin-left: 350px;
+    }
+    .players{
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
