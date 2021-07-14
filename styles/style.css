@@ -10,10 +10,6 @@ body{
 }
 
 
-h3{
-    font-size: 28px;
-}
-
 .flex-container{
     display: flex;
     align-items: center;
@@ -23,6 +19,8 @@ h3{
     background-color: #E02C6D;
     color: #FFFFFF;
     padding: 10px 24px;
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+
 }
 
 /*-------------------------------
@@ -37,8 +35,14 @@ top-banner-styles
     padding-left: 156px;
     padding-right: 140px;
     padding-top: 45px;
-
+    transition:background-color 2s linear,color 2s ease-in-out;
 }
+.top-banner:hover{
+    background-color: cyan;
+    color: rgb(90, 119, 32);
+    transform: rotate(360deg);
+}
+
 
 .half-width{
     width: 50%;
@@ -133,8 +137,15 @@ Media Queries
         flex-direction: column;
         width: 100%;
     }
-    .players-list{
+    .h-image,.b-img{
+        padding-top: 50px;
+    }
+    .players-list,.half-width,.footer-logo,.footer-info{
         width: 100%;
+    }
+    footer{
+        width: 400px;
+        margin-left: 120px;
     }
     .players{
         grid-template-columns: repeat(1,1fr);
