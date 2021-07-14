@@ -8,22 +8,12 @@ common-styles
 body{
     font-family: 'Poppins', sans-serif;
 }
-h1{
-    font-weight: 700;
-    font-size: 64px;
-    margin: 0px 50px 0px 0px;
 
-}
-h2{
-    font-size: 48px;
-    font-weight: 700;
-}
+
 h3{
     font-size: 28px;
 }
-p{
-    font-size: 16px;
-}
+
 .flex-container{
     display: flex;
     align-items: center;
@@ -39,6 +29,8 @@ p{
 top-banner-styles 
 ---------------------------------*/
 .top-banner{
+    display: flex;
+    align-items: center;
     background-color: #2D25A0;
     color: #FFFFFF;
     padding-bottom: 106px;
@@ -50,6 +42,10 @@ top-banner-styles
 
 .half-width{
     width: 50%;
+}
+.title-des h1{
+    font-size: 64px;
+    margin: 0px 50px 0px 0px;
 }
 .half-width img{
     width: 100%;
@@ -80,6 +76,9 @@ players-styles
     padding: 15px;
     box-shadow: 5px 5px 20px gray;
 }
+.player h3{
+    font-size: 28px;
+}
 /*-------------------------------------
  highlights-styles
  -------------------------------------- */
@@ -93,28 +92,52 @@ players-styles
 article{
     padding-right: 69px;
 }
+article h2{
+    font-size: 48px;
+    font-weight: 700;
+}
 
 
 /*------------------------------------- 
 Footer-Styles 
 ---------------------------------------*/
-
 footer{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-right: 475px;
-    margin-left: 475px;
-    margin-bottom: 47px;
+    flex-direction: column;
 }
-footer img{
+.footer-logo img{
     width: 100%;
 }
-#media-icon{
-    display: flex;
-
+.footer-logo{
+    width: 30%;
 }
+.footer-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
 .icon{
-margin: 0px 7px;
+    margin: 0px 7px;
     color: gray;
 }
+
+/*--------------------------------- 
+Media Queries 
+-----------------------------------*/
+@media only screen and (max-width:688px){
+    .top-banner,.highlights{
+        flex-direction: column;
+        width: 100%;
+    }
+    .players-list{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
