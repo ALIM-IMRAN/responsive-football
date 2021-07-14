@@ -19,7 +19,7 @@ body{
     background-color: #E02C6D;
     color: #FFFFFF;
     padding: 10px 24px;
-    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
 
 }
 
@@ -40,9 +40,10 @@ top-banner-styles
 .top-banner:hover{
     background-color: cyan;
     color: rgb(90, 119, 32);
+}
+.top-banner:hover .button{
     transform: rotate(360deg);
 }
-
 
 .half-width{
     width: 50%;
@@ -102,6 +103,65 @@ article h2{
 }
 
 
+
+/*-------------------------------
+ match-status-styles
+ -------------------------------- */
+
+.match-status{
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+.match h2{
+    font-size: 35px;
+    text-align: center;
+}
+.current-match{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.current-match img{
+    width: 100%;
+}
+.country-1{
+    background-color: skyblue;
+    color: white;
+    padding: 10px 20px;
+}
+.country-2{
+    background-color: green;
+    color: yellow;
+    padding: 10px 50px;
+}
+.flag{
+    width: 50%;
+}
+.flag img{
+    width: 100%;
+}
+
+/*--------------------------------
+ more-football-styles
+---------------------------------- */
+.more-football{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.more-title h1{
+    font-size: 58px;
+    padding-top: 20px;
+    padding-left: 200px;
+}
+
+
+
 /*------------------------------------- 
 Footer-Styles 
 ---------------------------------------*/
@@ -133,7 +193,7 @@ footer{
 Media Queries 
 -----------------------------------*/
 @media only screen and (max-width:688px){
-    .top-banner,.highlights{
+    .top-banner,.highlights,.match-status,.current-match,.more-football{
         flex-direction: column;
         width: 100%;
     }
@@ -142,6 +202,16 @@ Media Queries
     }
     .players-list,.half-width,.footer-logo,.footer-info{
         width: 100%;
+    }
+    .match-status{
+        margin-left: 150px;
+        margin-bottom: 70px;
+    }
+
+    .more-title h1{
+        font-size: 38px;
+        padding-top: 10px;
+        padding-left: 20px;
     }
     footer{
         width: 400px;
